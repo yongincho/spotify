@@ -1,0 +1,199 @@
+{
+  "years":[
+    {
+      "Year": 2010,
+      "Total": 11
+    },
+
+    {
+      "Year": 2011,
+      "Total": 15
+    },
+
+    {
+      "Year": 2012,
+      "Total": 14
+    },
+
+    {
+      "Year": 2013,
+      "Total": 8
+    },
+
+    {
+      "Year": 2014,
+      "Total": 9
+    },
+
+    {
+      "Year": 2015,
+      "Total": 23
+    },
+
+    {
+      "Year": 2016,
+      "Total": 13
+    },
+
+    {
+      "Year": 2017,
+      "Total": 15
+    },
+
+    {
+      "Year": 2018,
+      "Total": 12
+    },
+
+    {
+      "Year": 2019,
+      "Total": 11
+    }
+  ],
+
+  "layers":[
+    {
+      "Year": 2010,
+      "Bruno Mars": 2,
+      "Ed Sheeran": 0,
+      "Justin Bieber": 1,
+      "Katy Perry": 2,
+      "Lady Gaga": 3,
+      "Maroon 5": 1,
+      "Pitbull": 0,
+      "Rihanna": 2,
+      "Shawn Mendes": 0,
+      "The Chainsmokers": 0
+    },
+
+    {
+      "Year": 2011,
+      "Bruno Mars": 3,
+      "Ed Sheeran": 0,
+      "Justin Bieber": 0,
+      "Katy Perry": 2,
+      "Lady Gaga": 4,
+      "Maroon 5": 1,
+      "Pitbull": 1,
+      "Rihanna": 4,
+      "Shawn Mendes": 0,
+      "The Chainsmokers": 0
+    },
+
+    {
+      "Year": 2012,
+      "Bruno Mars": 2,
+      "Ed Sheeran": 0,
+      "Justin Bieber": 2,
+      "Katy Perry": 3,
+      "Lady Gaga": 0,
+      "Maroon 5": 2,
+      "Pitbull": 2,
+      "Rihanna": 3,
+      "Shawn Mendes": 0,
+      "The Chainsmokers": 0
+    },
+
+    {
+      "Year": 2013,
+      "Bruno Mars": 0,
+      "Ed Sheeran": 0,
+      "Justin Bieber": 1,
+      "Katy Perry": 1,
+      "Lady Gaga": 1,
+      "Maroon 5": 2,
+      "Pitbull": 2,
+      "Rihanna": 1,
+      "Shawn Mendes": 0,
+      "The Chainsmokers": 0
+    },
+
+    {
+      "Year": 2014,
+      "Bruno Mars": 3,
+      "Ed Sheeran": 0,
+      "Justin Bieber": 0,
+      "Katy Perry": 3,
+      "Lady Gaga": 0,
+      "Maroon 5": 1,
+      "Pitbull": 1,
+      "Rihanna": 0,
+      "Shawn Mendes": 0,
+      "The Chainsmokers": 1
+    },
+
+    {
+      "Year": 2015,
+      "Bruno Mars": 0,
+      "Ed Sheeran": 4,
+      "Justin Bieber": 9,
+      "Katy Perry": 1,
+      "Lady Gaga": 0,
+      "Maroon 5": 3,
+      "Pitbull": 3,
+      "Rihanna": 2,
+      "Shawn Mendes": 1,
+      "The Chainsmokers": 0
+
+    },
+
+    {
+      "Year": 2016,
+      "Bruno Mars": 0,
+      "Ed Sheeran": 0,
+      "Justin Bieber": 2,
+      "Katy Perry": 1,
+      "Lady Gaga": 2,
+      "Maroon 5": 0,
+      "Pitbull": 0,
+      "Rihanna": 2,
+      "Shawn Mendes": 3,
+      "The Chainsmokers": 3
+
+    },
+
+    {
+      "Year": 2017,
+      "Bruno Mars": 2,
+      "Ed Sheeran": 1,
+      "Justin Bieber": 0,
+      "Katy Perry": 3,
+      "Lady Gaga": 1,
+      "Maroon 5": 1,
+      "Pitbull": 2,
+      "Rihanna": 0,
+      "Shawn Mendes": 2,
+      "The Chainsmokers": 3
+
+    },
+
+    {
+      "Year": 2018,
+      "Bruno Mars": 1,
+      "Ed Sheeran": 1,
+      "Justin Bieber": 1,
+      "Katy Perry": 0,
+      "Lady Gaga": 1,
+      "Maroon 5": 2,
+      "Pitbull": 0,
+      "Rihanna": 1,
+      "Shawn Mendes": 4,
+      "The Chainsmokers": 1
+
+    },
+
+    {
+      "Year": 2019,
+      "Bruno Mars": 0,
+      "Ed Sheeran": 5,
+      "Justin Bieber": 0,
+      "Katy Perry": 0,
+      "Lady Gaga": 0,
+      "Maroon 5": 2,
+      "Pitbull": 0,
+      "Rihanna": 0,
+      "Shawn Mendes": 1,
+      "The Chainsmokers": 3
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 Final Project: Analyzing Song Popularity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <script type="text/javascript" src="js/libraries/fullpage.js"></script>
+  </head>
+
+  <body>
+
+  <div id="fullpage">
+    <div id = "landing_page" class = "section">
+      <div class = "row" style = "height: 100vh;">
+        <div class = "col-3">
+          <img id = "website_image" src = "/img/logo.png">
+        </div>
+        <div class = "col">
+          <div id = "website_title">WHAT MAKES A SONG POPULAR?</div>
+          <div id = "website_subtitle">Analyzing Spotify Trends from 2010-2019</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class = "row" style = "height: 100vh;">
+        <div class = "col-3"></div>
+        <div class = "col">
+          <div id = "desc_1">Music is everywhere. Whether you’re jamming out to your own playlist, scrolling through social media, or entering a cafe where they’re playing their own mix, the latest and most popular tunes are always floating around. As music listeners ourselves, we then wondered: what makes a song popular? As trends come and go within music, we wanted to see how trends for popular songs have changed as well. To see how trends have changed within the past decade, we looked at the top 100 streamed songs every year and their associated attributes through Spotify database, one of the largest music streaming platforms around the world.</div>
+        </div>
+      </div>
+<div class = "navbar col-2">
+  <div class = "table_contents">
+    <h8>Menu</h8><br>
+    <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+    <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+    <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+<a href = "#predictions">Predictions</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class = "section" id = "vis_1">
+      <div class = "row">
+      <div class = "header">Which genres of music have been the most popular during the past decade?</div>
+      <div class = "full_desc">
+        To see broadly what types of music have been popular over time, we can first look at the breakdown of the most popular genres of the top songs from 2010-2019.
+      </div>
+      </div>
+      <div class = "navbar col-2">
+        <div class = "table_contents">
+          <h8>Menu</h8><br>
+          <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+          <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+          <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+      <a href = "#predictions">Predictions</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section" id = "sec3">
+      <div class = "row" style = "height: 100vh;">
+          <h3 class = "chart_title">Most Popular Genres Overall From 2010-2019</h3>
+          <div class="row">
+            <div class = "col-3 chart_description">
+              If you look at the breakdown of the genres over the decade, we can see that the most popular genre by far is dance pop. Pop as a broader category seems to be the most consistently popular over the decade, particularly as songs categorized as just "pop" and also "canadian pop" follow the lead of "dance pop."
+            </div>
+            <div class="col-5">
+              <div id="pie-chart-vis" style = "height: 40vh;"></div>
+            </div>
+          </div>
+          <h3 class = "chart_title" id = "line">Number of Top Songs Per Genre Over the Years</h3>
+          <div class = "row">
+            <div class = "col-3 chart_description">
+              The line graph to the right shows how many top songs there have been for each genre for each year of the past decade. We can see, again, that dance pop dominates the top charts by far for every year by a large lead. To see how the genres represented on the pie chart above are drawn on the line graph, hover over the pie chart to see the correlated genres!
+            </div>
+            <div class = "col-5" id = "vis_2">
+              <div id = "line_graph" style = "height: 40vh;"></div>
+            </div>
+          </div>
+      </div>
+<div class = "navbar col-2">
+  <div class = "table_contents">
+              <h8>Menu</h8><br>
+    <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+    <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+    <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+<a href = "#predictions">Predictions</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="section" id = "vis_3">
+      <div class = "row">
+        <div class = "header">
+          Which artists have released the most top-charted songs over the years?
+        </div>
+        <div class = "full_desc">
+          To expand on our understanding of the most popular songs during the past decade, we can also look at which artists have released the most top-charted (ranking according to popularity between 2010 through 2019) songs. We can see from the stacked area chart below that even the most successful artists (in terms of producing top charting songs) would only release around 2 such songs for the year, with the exception of Justin Bieber in 2015, who released over 5 top charting songs that year. It's notable that most of these artists are generally known to be of the pop artist category.
+        </div>
+      </div>
+<div class = "navbar col-2">
+  <div class = "table_contents">
+              <h8>Menu</h8><br>
+    <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+    <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+    <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+<a href = "#predictions">Predictions</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="section">
+      <div class = "row" style = "height: 100vh;">
+        <h3 class = "chart_title">Top 10 Artists On Spotify With the Most Hits From 2010-2019</h3>
+        <div class = "visualization">
+          <div class="col-8">
+            <div id="stacked-area-chart" style = "height: 50vh"></div>
+            <div id="timeline"></div>
+          </div>
+        </div>
+      </div>
+<div class = "navbar col-2">
+  <div class = "table_contents">
+              <h8>Menu</h8><br>
+    <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+    <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+    <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+<a href = "#predictions">Predictions</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="section" id = "vis_4">
+      <div class = "row">
+        <div class = "header">
+          What characteristics make a song popular?
+        </div>
+        <div class = "description">
+          So far, we have found that pop tends to be popular with the general listening population. But what is it exactly about pop that listeners enjoy so much? To understand this, we can break down several attributes of each year's top song from 2010-2019,
+          specifically the valence, energy, and danceability.
+        </div>
+      </div>
+<div class = "navbar col-2">
+  <div class = "table_contents">
+              <h8>Menu</h8><br>
+    <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+    <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+    <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+<a href = "#predictions">Predictions</a>
+  </div>
+</div>
+
+    </div>
+
+
+    <div class="section" style="position:relative;">
+      <div class = "row-donut" style = "height: 100vh;">
+        <div class = "visualization">
+          <h3 class = "chart_title">Valence, Energy, and Danceability of Each Year's Most Popular Song from 2010-2019</h3>
+          <div class = "description long">
+          </div>
+          <div id="heading" class="seven">
+            <div class="box1">
+              <p class = "selection" id="selectyear">Choose Year:</p>
+              <select name="year" id="year" onchange="categoryChange()">
+                <option value="none" selected disabled hidden>Select a year!</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Song information column-->
+          <div class = "row-donut" style = "height: 25vh;">
+            <div class = "column">
+              <h2 id="song">Song Title</h2>
+              <p id="artistName">Artist</p>
+            </div>
+            <div class = "column">
+              <h2>Valence</h2>
+              <p class = "attribute">A measure from 0 to 100. Describes the musical positiveness conveyed by a track. A value of 0 sounds the least positive, while a value of 100 sounds the most positive.</p>
+            </div>
+            <div class = "column">
+              <h2>Energy</h2>
+              <p class = "attribute"> A measure from 0 to 100. Represents a perceptual measure of intensity and activity.</p>
+            </div>
+            <div class = "column">
+              <h2>Danceability</h2>
+              <p class = "attribute">A measure from 0 to 100. Describes how suitable a track is for dancing based on mix of elements (tempo, rhythm stability, beat strength, etc.). A value of 0 is least danceable, and 100 is most danceable.</p>
+            </div>
+          </div>
+          <div class = "row-donut" style = "height: 40vh;">
+            <div class="column" id= "artist">
+              <p id="audio"></p>
+              <p id="image"></p>
+            </div>
+            <!--Song Valence column-->
+            <div class="column" id= "bpm"></div>
+            <!--Song energy column-->
+            <div class="column" id= "energy"></div>
+            <!--Song danceability column-->
+            <div class="column" id= "dance"></div>
+          </div>
+        </div>
+      </div>
+      <div class = "navbar col-2">
+        <div class = "table_contents">
+          <h8>Menu</h8><br>
+          <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+          <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+          <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+          <a href = "#predictions">Predictions</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section" id = "sec2">
+      <div class = "row">
+        <h3 class = "chart_title">Radar Chart for The Top 10 Most Popular Songs</h3>
+      </div>
+      <div class = "row">
+        <div class = "col-8">
+          <div class = "chart_description">
+            After looking at valence, energy, and danceability of the top songs of each year, we can now look at all the attributes of the most popular 10 songs over the past decade.
+            From this chart, we can see that popular songs not only have high valence, energy, and danceability, but also high loudness and accousticness, moderate bpm and duration, and low speechiness.
+          </div>
+          <div class="select">
+            <select class="form-control" id="ranking-type">
+              <option value="1">Top 1</option>
+              <option value="2">Top 2</option>
+              <option value="3">Top 3</option>
+              <option value="4">Top 4</option>
+              <option value="5">Top 5</option>
+              <option value="6">Top 6</option>
+              <option value="7">Top 7</option>
+              <option value="8">Top 8</option>
+              <option value="9">Top 9</option>
+              <option value="10">Top 10</option>
+            </select>
+          </div>
+          <div class="overlap">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Overlap</label>
+            </div>
+          </div>
+          <div class="radarChart" id = "radarChart" style = "height: 40vh;"></div>
+          </div>
+        <div class = "col-3">
+          <div class="info-table" id = "infoTable">
+            <div class="radar-name" id="name"></div>
+            <div id="table"></div>
+          </div>
+        </div>
+        </div>
+      <div class = "navbar col-2">
+        <div class = "table_contents">
+          <h8>Menu</h8><br>
+          <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+          <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+          <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+          <a href = "#predictions">Predictions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id = "predictions">
+      <div class = "row">
+        <div class = "header">
+          So what makes a song popular in the current world?
+        </div>
+        <div class = "description">
+          By looking at the different traits of the most popular songs over the past decade, we can confidently say that the most popular songs have tended to be (dance) pop songs released by pop artists.
+          These songs tended to have attributes of high valence, energy, danceability, loudness, and accousticness, attributes of moderate bpm and duration, and attributes of low speechiness and likelihood of live recording.
+          As listeners, we predict that similar trends will persist in the future, so music listeners should expect to hear such songs.
+        </div>
+      </div>
+      <div class = "navbar col-2">
+        <div class = "table_contents">
+          <h8>Menu</h8><br>
+          <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+          <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+          <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+          <a href = "#predictions">Predictions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class = "row" >
+        <div class = "header">Thank you!</div>
+        <div class="description">
+          We are a group of undergraduate students at Harvard University, and our visualization project was for <a href="https://www.cs171.org/2021/">CS171:Visualization</a> class in Fall 2021.
+          All our source codes, data, and images can be found in our <a href="https://github.com/hanarubykim/cs171-finalproject" target="_blank">GitHub repo</a>.
+          Data can be found from here, and all images were collected from Google image search, with their respective source links commented in each image file.
+          <br><br>
+          <div class = "profiles">
+          <div class="profile">
+            <a href="https://www.linkedin.com/in/jason-yong-in-cho-8a9173185/" target="_blank"><span class="name">Jason Cho</span><br></a>
+            <span style="font-size:18px;">B.S in Computer Science & Biomedical Engineering</span>
+          </div>
+          <div class="profile">
+            <a href= "www.linkedin.com/in/hanarubykim" target="_blank"><span class="name">Hana Kim</span><br></a>
+            <span style="font-size:18px;">B.A. in Social Studies</span>
+          </div>
+          <div class="profile">
+            <a href="https://www.linkedin.com/in/michelle-liu-2024/" target="_blank"><span class="name">Michelle Liu</span><br></a>
+            <span style="font-size:18px;">B.A. in Computer Science</span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class = "navbar col-2">
+        <div class = "table_contents">
+          <h8>Menu</h8><br>
+          <a href = "#vis_1">Most Popular Genres Over Time</a><br>
+          <a href = "#vis_3">Artists that Have Released the Most Top-Charting Hits Yearly</a><br>
+          <a href = "#vis_4">Characteristics of Popular Songs</a><br>
+          <a href = "#predictions">Predictions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
+
+  <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- d3 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+
+  <!-- OWN JS -->
+  <script src="js/piechart.js"></script>
+  <script src="js/line.js"></script>
+  <script src="js/areachart.js"></script>
+  <script src="js/donut.js"></script>
+  <script src="js/radarchart.js"></script>
+  <script src="js/dynamics.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
