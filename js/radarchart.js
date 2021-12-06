@@ -81,17 +81,13 @@ d3.select('#flexSwitchCheckDefault').on('change', function() {
 
 function showEdition(d){
     // Get world cup name of the clicked data
-    document.getElementById("name").innerHTML = '<h7>' + d['title'] + '</h7>';
+    document.getElementById("name").innerHTML = '<h7>' + d['title'] + ' (' + d['year'] + ')' + '</h7>';
     // Get other information of the clicked data in a table format
     document.getElementById("table").innerHTML = '<table class="table table-hover">\n' +
         '  <tbody>\n' +
         '    <tr>\n' +
         '      <th scope="row">Artist</th>\n' +
         '      <td>' + d['artist'] + '</td>\n' +
-        '    </tr>\n' +
-        '    <tr>\n' +
-        '      <th scope="row">Year Released</th>\n' +
-        '      <td>' + d['year'] + '</td>\n' +
         '    </tr>\n' +
         '    <tr>\n' +
         '      <th scope="row">Accoustic (how acoustic the song is)</th>\n' +
@@ -202,11 +198,11 @@ function RadarChart(id, data, originalData) {
     //Initiate the radar chart SVG
     var svg = d3.select(id).append("svg")
         .attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
-        .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
+        .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom + 160)
         .attr("class", "radar"+id);
     //Append a g element
     var g = svg.append("g")
-        .attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top) + ")");
+        .attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top + 80) + ")");
 
     /////////////////////////////////////////////////////////
     ////////// Glow filter for some extra pizzazz ///////////
