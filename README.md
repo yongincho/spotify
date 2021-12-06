@@ -3,7 +3,7 @@
 **Team Members**: Jason Cho, Hana Kim, Michelle Liu
 
 * URL to website: https://yongincho.github.io/spotify
-* URL to video: https://www.youtube.com/watch?v=RbN-aJEid9c&ab_channel=MichelleLiu
+* URL to video: https://www.youtube.com/watch?v=RbN-aJEid9c&ab
 
 ## Project Structure
 - `index.html`: main html file for our website.
