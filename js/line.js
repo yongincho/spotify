@@ -1,6 +1,6 @@
 var parseTime = d3.timeParse("%Y");
 
-d3.csv("/data/data.csv").then(data => {
+d3.csv("data/data.csv").then(data => {
     data.forEach(function(d){
         d.acous = +d.acous;
         d.bpm = +d.bpm;
