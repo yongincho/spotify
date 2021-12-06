@@ -135,7 +135,7 @@ function RadarChart(id, data, originalData) {
     let parentElement = "radarChart";
     d3.select('.radarChart').select("svg").remove();
 
-    var margin = {top: 40, right: 10, bottom: 40, left: 10};
+    var margin = {top: 40, right: 20, bottom: 40, left: 20};
     width = document.getElementById(parentElement).getBoundingClientRect().width - margin.left - margin.right;
     height = document.getElementById(parentElement).getBoundingClientRect().height -margin.top - margin.bottom;
 
