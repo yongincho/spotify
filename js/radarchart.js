@@ -47,14 +47,14 @@ function updateVis1() {
         data1.push([
             {axis: "Acoustic", value: d['acous']/99},
             {axis: "BPM",value: d['bpm']/206},
-            {axis: "Danceability",value: d['dnce']/97},
+            {axis: "Danceable",value: d['dnce']/97},
             {axis: "Duration",value: d['dur']/424},
             {axis: "Energy",value: d['nrgy']/98},
             {axis: "Live Recording",value: d['live']/74},
             {axis: "Loudness",value: 1 - d['dB']/(-60)},
             {axis: "Popularity",value: d['pop']/99},
             {axis: "Positive Mood",value: d['val']/98},
-            {axis: "Speechiness",value: d['spch']/48}
+            {axis: "Speech",value: d['spch']/48}
         ])
     })
 
@@ -98,7 +98,7 @@ function showEdition(d){
         '      <td>' + d['bpm'] + '</td>\n' +
         '    </tr>\n' +
         '    <tr>\n' +
-        '      <th scope="row">Danceability (how easy it is to dance to the song)</th>\n' +
+        '      <th scope="row">Danceable (how easy it is to dance to the song)</th>\n' +
         '      <td>' + d['dnce'] + ' /97' + '</td>\n' +
         '    </tr>\n' +
         '    <tr>\n' +
@@ -118,7 +118,7 @@ function showEdition(d){
         '      <td>' + d['val'] + ' /98' + '</td>\n' +
         '    </tr>\n' +
         '    <tr>\n' +
-        '      <th scope="row">Speechiness (how much spoken word the song contains)</th>\n' +
+        '      <th scope="row">Speech (how much spoken word the song contains)</th>\n' +
         '      <td>' + d['spch'] + ' /48' + '</td>\n' +
         '    </tr>\n' +
         '  </tbody>\n' +
