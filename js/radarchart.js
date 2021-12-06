@@ -135,7 +135,7 @@ function RadarChart(id, data, originalData) {
     let parentElement = "radarChart";
     d3.select('.radarChart').select("svg").remove();
 
-    var margin = {top: 40, right: 10, bottom: 70, left: 10};
+    var margin = {top: 30, right: 10, bottom: 30, left: 10};
     width = document.getElementById(parentElement).getBoundingClientRect().width - margin.left - margin.right;
     height = document.getElementById(parentElement).getBoundingClientRect().height -margin.top - margin.bottom;
 
@@ -198,11 +198,11 @@ function RadarChart(id, data, originalData) {
     //Initiate the radar chart SVG
     var svg = d3.select(id).append("svg")
         .attr("width",  cfg.w + cfg.margin.left + cfg.margin.right)
-        .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom + 100)
+        .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom + 50)
         .attr("class", "radar"+id);
     //Append a g element
     var g = svg.append("g")
-        .attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top + 60) + ")");
+        .attr("transform", "translate(" + (cfg.w/2 + cfg.margin.left) + "," + (cfg.h/2 + cfg.margin.top + 30) + ")");
 
     /////////////////////////////////////////////////////////
     ////////// Glow filter for some extra pizzazz ///////////
