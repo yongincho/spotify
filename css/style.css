@@ -111,6 +111,10 @@ h6{
     width: 100%;
 }
 
+tspan {
+    font-size: 0.75em;
+}
+
 #website_title{
     padding-top: 40vh;
     color: white;
@@ -188,7 +192,7 @@ h6{
 .header{
     font-size: 2em; font-weight:400; color:white; letter-spacing:1px;
     margin-top: 3vh;
-    margin-right 1vh;
+    margin-right: 1vh;
     margin-left: 40vh;
     margin-bottom: 1vh;
     color: #008000FF;
@@ -295,7 +299,7 @@ RADARCHART
 }
 
 .select {
-    width: 250px;
+    width: 350px;
     height: 60px;
     padding-top: 2vh;
     padding-left: 40vh;
